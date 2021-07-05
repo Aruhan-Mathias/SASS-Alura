@@ -1,0 +1,63 @@
+///Estas variaveis se referem as cores principais do nosso blog 
+$purple: #A050be;
+$light-grey: #eaeaeb;
+$dark-grey: #464646;
+.header {
+    font-family: Arial, Helvetica, sans-serif;
+    &__logo {
+        text-align: center;
+    }
+    &__img {
+        max-width: 350px;
+    }
+    .menu {
+        &__list {
+            display: flex;
+            justify-content: center;
+            border-top: 1px solid $light-grey;
+            border-bottom: 1px solid $light-grey;
+            margin: 0 auto 0 auto;
+            padding: 20px 0;
+            width: 80%;
+        }
+        &__links {
+            position: relative;
+            &:not(:last-child):after {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: -3px;
+                margin: auto;
+                height: 15px;
+                background-color: $light-grey;
+                width: 1px;
+            }
+        }
+        &__link {
+            padding: 0 25px;
+            color: $dark-grey;
+            &:hover {
+                color: $purple;
+            }
+        }
+    }
+}
+
+//footer
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    &__logo {
+        max-width: 100px;
+    }
+    &__txt {
+        margin: auto;
+        font-size: 14px;
+    }
+}
