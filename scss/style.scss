@@ -45,7 +45,7 @@ $img-width: 45%;
     @return $size / 16px  * 1rem;
 }
 
-@import 'header', 'footer', 'about', 'article', 'collection';
+@import 'header', 'footer', 'about', 'article', 'collection', 'contact';
 
 $directions: top, bottom, right, left;
 $layout-margin-size: 10px;
