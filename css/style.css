@@ -84,7 +84,7 @@
 }
 .footer__txt {
   margin: auto;
-  font-size: 0.875;
+  font-size: 0.875rem;
 }
 
 .about {
@@ -213,6 +213,178 @@
   padding: 10px 20px;
 }
 
+.collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial;
+}
+@media (max-width: 767.98px) {
+  .collection {
+    width: 90%;
+  }
+}
+.collection__post {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+@media (max-width: 767.98px) {
+  .collection__post {
+    width: 100%;
+  }
+}
+.collection__post.half {
+  width: 50%;
+}
+@media (max-width: 767.98px) {
+  .collection__post.half {
+    width: 100%;
+  }
+}
+.collection__figure {
+  width: 50%;
+}
+.collection__img {
+  width: 100%;
+}
+.collection__about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+}
+.collection__title {
+  color: #464646;
+  text-decoration: unset;
+  letter-spacing: 1px;
+  width: 100%;
+  margin: 10px 0;
+  font-size: 1.375rem;
+}
+@media (max-width: 767.98px) {
+  .collection__title {
+    font-size: 1rem;
+  }
+}
+.collection__title.half {
+  font-size: 1.125rem;
+}
+@media (max-width: 767.98px) {
+  .collection__title.half {
+    font-size: 1rem;
+  }
+}
+.collection__title:hover {
+  color: #A050be;
+  text-decoration: underline;
+}
+.collection__date {
+  font-style: italic;
+  width: 20%;
+  font-size: 0.75rem;
+}
+@media (max-width: 767.98px) {
+  .collection__date {
+    font-size: 0.625rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .collection__date {
+    width: 30%;
+  }
+}
+.collection__tag {
+  width: 50px;
+  padding: 5px 7px;
+  color: #A050be;
+  border: 1px solid #A050be;
+  font-size: 0.875rem;
+}
+@media (max-width: 767.98px) {
+  .collection__tag {
+    width: 30px;
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .collection__tag {
+    width: 35px;
+    font-size: 0.75rem;
+  }
+}
+.collection__breadcrumb {
+  background-color: #eaeaeb;
+  text-align: center;
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.collection .breadcrumb__link {
+  text-decoration: unset;
+  color: #464646;
+  letter-spacing: 1px;
+  font-size: 1.125rem;
+}
+.collection .breadcrumb__link:hover {
+  color: #A050be;
+  text-decoration: underline;
+}
+.collection .breadcrumb__img {
+  width: 14px;
+  margin: 10px;
+}
+
+.main__tag, .main__date, .collection__date, .collection__tag {
+  margin-top: 0;
+}
+
+.main__p, .main__subtitle {
+  margin-top: 10px;
+}
+
+.main__info {
+  margin-top: 20px;
+}
+
+.main__tag, .main__date, .collection__date, .collection__tag {
+  margin-bottom: 0;
+}
+
+.main__p {
+  margin-bottom: 10px;
+}
+
+.main__subtitle {
+  margin-bottom: 20px;
+}
+
+.main__p {
+  margin-right: 0;
+}
+
+.main__tag, .main__date, .collection__date, .collection__tag {
+  margin-right: 10px;
+}
+
+.main__p {
+  margin-left: 0;
+}
+
+.main__tag, .main__date, .collection__date, .collection__tag {
+  margin-left: 10px;
+}
+
 .main {
   display: flex;
   justify-content: center;
@@ -236,7 +408,7 @@
 }
 .main__title {
   text-decoration: none;
-  font-size: 1.375;
+  font-size: 1.375rem;
   color: #464646;
   letter-spacing: 1.5px;
 }
@@ -247,18 +419,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px 0 20px 0;
 }
 .main__date {
-  margin: 0 10px;
-  font-size: 12px;
   font-style: italic;
+  font-size: 0.75rem;
 }
 .main__tag {
   font-style: 14px;
   padding: 5px 7px;
   border: 1px solid #A050be;
-  margin: 0 10px;
 }
 .main__details {
   border: 1px solid #eaeaeb;
@@ -291,7 +460,6 @@
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid #eaeaeb;
-  margin-top: 30px;
 }
 .main__author {
   width: 50%;
@@ -300,7 +468,6 @@
 .main__p {
   font-size: 14px;
   color: #464646;
-  margin: 10px 0 10px 0;
 }
 .main__comments {
   width: 50%;
